@@ -1,0 +1,15 @@
+button,
+input,
+textarea {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.link-unstyled {
+    text-decoration: none;
+    color: var(--black);
+}
