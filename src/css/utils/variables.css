@@ -1,4 +1,4 @@
-::root {
+:root {
     /* Color styles */
     --white: rgba(238, 238, 238, 1);
     --black: rgba(9, 9, 9, 1);
@@ -22,8 +22,8 @@
     --text-small: 0.93rem;
 
     /* Font family */
-    --font-family: 'Grenze', serif;
-    --font-family: 'Open Sans', sans-serif;
+    --font-serif: 'Grenze', serif;
+    --font-sans-serif: 'Open Sans', sans-serif;
 
     /* Font Style */
     --regular: 400;
