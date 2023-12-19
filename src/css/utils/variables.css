@@ -1,0 +1,46 @@
+::root {
+    /* Color styles */
+    --white: rgba(238, 238, 238, 1);
+    --black: rgba(9, 9, 9, 1);
+    --blue: rgba(16, 52, 74, 1);
+    --skyblue: rgba(162, 233, 251, 1);
+    --orange: rgba(244, 186, 119, 1);
+    --faded: rgba(102, 118, 127, 1);
+
+    /* Text-size styles */
+    /* base size: body (15px) */
+    --text-title1: 2.53rem;
+    --text-title2: 1.6rem;
+    /* header */
+    --text-logo: 1.87rem;
+    /* intro */
+    --text-large: 1.2rem;
+    /* card */
+    --text-medium: 1.07rem;
+    /* body */
+    --text-regular: 1rem;
+    --text-small: 0.93rem;
+
+    /* Font family */
+    --font-family: 'Grenze', serif;
+    --font-family: 'Open Sans', sans-serif;
+
+    /* Font Style */
+    --regular: 400;
+    --semi-bold: 600;
+    --italic: italic;
+
+    /* Line Height ; Letter Space */
+    --letter-space2: 0.02em;
+    --letter-space5: -0.05em;
+    --line-height-title1: 45px;
+    --line-height-title2: 27px;
+
+    /* Spaces */
+    --space1: 8px;
+    --space2: 16px;
+    --space3: 24px;
+    --space4: 32px;
+    --space5: 40px;
+    --space6: 48px;
+}

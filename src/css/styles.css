@@ -1,10 +1,11 @@
 /* Polices de caractère */
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* Librairies */
-@import "vendors/normalize.css"
+@import "vendors/normalize.css";
 
 /* Variables */
-
+@import "utils/variables.css";
 /* Règles générales */
 
 /*Règles de Layout */
