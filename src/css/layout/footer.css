@@ -5,6 +5,7 @@
     align-items: center;
     padding: var(--space3) var(--space1);
     color: var(--white);
+    margin: 0;
 }
 
 .footer__icons {
