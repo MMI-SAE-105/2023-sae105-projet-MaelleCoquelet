@@ -13,5 +13,6 @@
 
 /*Règles de Layout */
 @import "layout/header.css";
+@import "layout/footer.css";
 
 /*Règles des Components */
