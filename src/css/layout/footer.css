@@ -1,10 +1,21 @@
 .footer {
     background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space1);
+    color: var(--white);
 }
 
 .footer__icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:16vw;
+    gap: 16vw;
+}
+
+.footer__logo,
+.footer__text {
+    padding: var(--space1);
+    text-align: center;
 }
