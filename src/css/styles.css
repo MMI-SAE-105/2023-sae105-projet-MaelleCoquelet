@@ -16,3 +16,4 @@
 @import "layout/footer.css";
 
 /*Règles des Components */
+@import "components/menu.css";
