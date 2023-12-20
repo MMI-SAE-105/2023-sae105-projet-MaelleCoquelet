@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    margin-bottom: var(--space6);
+    margin: 0 var(--space2) var(--space6) var(--space2);
 }
 
 button,
