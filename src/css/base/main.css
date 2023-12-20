@@ -9,6 +9,7 @@
 body {
     font-family: var(--font-sans-serif);
     letter-spacing: var(--letter-space2);
+    background-color: var(--white);
 }
 
 main {
