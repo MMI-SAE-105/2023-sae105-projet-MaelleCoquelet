@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--space1);
+    padding: var(--space3) var(--space1);
     color: var(--white);
 }
 
