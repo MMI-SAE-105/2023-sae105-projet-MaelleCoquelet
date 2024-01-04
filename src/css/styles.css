@@ -14,6 +14,10 @@
 /*Règles de Layout */
 @import "layout/header.css";
 @import "layout/footer.css";
+@import "layout/section.css";
 
 /*Règles des Components */
 @import "components/menu.css";
+@import "components/btn.css";
+@import "components/figure.css";
+@import "components/intro.css";
