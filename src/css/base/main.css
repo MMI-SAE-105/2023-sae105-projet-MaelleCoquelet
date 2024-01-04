@@ -12,10 +12,6 @@ body {
     background-color: var(--white);
 }
 
-main {
-    margin: 0 var(--space2) var(--space6) var(--space2);
-}
-
 h1,
 h2,
 h3 {
