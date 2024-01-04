@@ -13,10 +13,22 @@
     font-size: 28px;
 }
 
-.btn--intro__content{
+.btn--intro__content {
     color: var(--white);
 }
 
-.btn--intro__img{
+.btn--intro__img {
     padding: 0 var(--space2);
+}
+
+.btn--article {
+    background-color: var(--orange);
+    width: fit-content;
+    padding: var(--space1) var(--space2);
+    display: flex;
+    gap: var(--space1);
+    align-items: center;
+    font-size: var(--text-small);
+    font-weight: var(--semi-bold);
+    border-radius: 3px;
 }
