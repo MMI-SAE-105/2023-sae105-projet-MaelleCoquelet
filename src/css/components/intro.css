@@ -25,3 +25,6 @@
     text-align: center;
 }
 
+.intro__description{
+    padding: 0 var(--space3);
+}

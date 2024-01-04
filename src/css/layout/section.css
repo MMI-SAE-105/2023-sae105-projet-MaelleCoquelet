@@ -1,6 +1,5 @@
 .section {
-    padding: var(--space2);
-    padding-bottom: var(--space5);
+    padding : var(--space5) var(--space3);
 }
 
 .section--full{
