@@ -1,8 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
-- NOM : 
-- PRÉNOM :
-- URL du site :
-- URL FIGMA :
+- NOM : Coquelet 
+- PRÉNOM : Maëlle
+- URL du site : https://kaalsifis.maelle-coquelet.fr https://superlative-kheer-b5a555.netlify.app/fr/ 
+- URL FIGMA : https://www.figma.com/file/SPK6yWJaG5RBPusaGvvGth/Maquettes-projet-individuel-%E2%80%94-Ma%C3%ABlle-Coquelet?type=design&node-id=1501%3A115&mode=dev
 
 # Structure de départ pour le projet individuel.
 
