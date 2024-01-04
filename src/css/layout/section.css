@@ -2,3 +2,9 @@
     padding: var(--space2);
     padding-bottom: var(--space5);
 }
+
+.section--full{
+    padding: 0;
+    margin:0;
+    width: 100%;
+}
