@@ -1,10 +1,16 @@
 .article {
-    padding: var(--space4) 0;
+    padding: var(--space2) 0;
 }
 
 .article__content {
     display: flex;
     flex-direction: column;
+}
+
+.article__card{
+    background-color: var(--blue);
+    padding-bottom: var(--space3);
+    border-radius: 5px;
 }
 
 .article__title {
