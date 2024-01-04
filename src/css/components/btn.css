@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn--intro {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    padding: var(--space1) var(--space1);
+    margin: var(--space4);
+    font-family: var(--font-serif);
+    font-size: 28px;
+}
+
+.btn--intro__content{
+    color: var(--white);
+}
+
+.btn--intro__img{
+    padding: 0 var(--space2);
+}
