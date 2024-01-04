@@ -1,0 +1,18 @@
+.article {
+    padding: var(--space4) 0;
+}
+
+.article__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__title {
+    font-size: var(--text-title2);
+    color: var(--white);
+}
+
+.article__text {
+    font-size: var(--text-medium);
+    color: var(--white);
+}
