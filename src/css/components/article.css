@@ -5,17 +5,19 @@
 .article__content {
     display: flex;
     flex-direction: column;
+    gap: var(--space2);
+    padding: 25px;
 }
 
-.article__card{
+.article__card {
     background-color: var(--blue);
-    padding-bottom: var(--space3);
     border-radius: 5px;
 }
 
 .article__title {
     font-size: var(--text-title2);
     color: var(--white);
+    font-weight: var(--normal);
 }
 
 .article__text {
