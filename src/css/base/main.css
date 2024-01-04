@@ -18,6 +18,15 @@ h3 {
     font-family: var(--font-serif);
 }
 
+h2,
+h3 {
+    font-weight: var(--normal);
+}
+
+h1 {
+    font-weight: var(--semi-bold);
+}
+
 button,
 input,
 textarea {
