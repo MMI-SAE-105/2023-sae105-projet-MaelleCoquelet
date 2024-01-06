@@ -25,6 +25,15 @@
     text-align: center;
 }
 
+.intro__info{
+    font-size: var(--text-small);
+    font-style: var(--italic);
+}
+
+.intro__author{
+    padding: var(--space1);
+}
+
 .intro__content {
     padding: 0 var(--space3);
     display: flex;

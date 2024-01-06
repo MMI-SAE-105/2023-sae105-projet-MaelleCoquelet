@@ -11,4 +11,5 @@
 .section__title{
     padding: var(--space1) 0;
     font-weight: var(--normal);
+    color: var(--blue);
 }
