@@ -7,3 +7,9 @@
     font-size: var(--text-regular);
     padding: var(--space1) 0;
 }
+
+.content__title--bold{
+    font-size: var(--text-regular);
+    font-family: var(--font-sans-serif);
+    font-weight: var(--semi-bold);
+}
