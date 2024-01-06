@@ -1,0 +1,9 @@
+.content__title {
+    font-size: var(--text-title2);
+    padding: var(--space1) 0;
+}
+
+.content__text {
+    font-size: var(--text-regular);
+    padding: var(--space1) 0;
+}
