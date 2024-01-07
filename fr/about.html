@@ -11,18 +11,18 @@
 
 <body>
     <main>
-        <section>
-            <h1>À propos</h1>
-            <figure>
-                <img src="../public/img/about1.webp" alt="Citation de Perceval">
-                <figcaption>Citation de Perceval</figcaption>
+        <section class="section">
+            <h1 class="section__title">À propos</h1>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/about1.webp" alt="Citation de Perceval">
+                <figcaption class="figure__caption">Citation de Perceval</figcaption>
             </figure>
-            <p>
+            <p class="content__text">
                 L’équipe responsable du site se compose de Maëlle Coquelet.
                 Étudiante en BUT MMi, j’ai réalisé ce site dans le cadre d’un projet
                 pédagogique au département MMi de Montbéliard.
             </p>
-            <p>
+            <p class="content__text">
                 Une de mes inspirations a été la <a href="https://www.youtube.com/@Sy_Play">chaîne SyPlay</a>. Sy est un
                 vidéaste qui réalise
                 des analyses de personnages, majoritairement sur Kaamelott. C’est son
@@ -30,14 +30,14 @@
                 abonner, c’est gratuit et son contenu est de qualité !
 
             </p>
-            <figure>
-                <img src="../public/img/about2.webp" alt="Sy Play accompagné de Lan Truong et Guillaume Briat">
-                <figcaption>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/about2.webp" alt="Sy Play accompagné de Lan Truong et Guillaume Briat">
+                <figcaption class="figure__caption">
                     Sy de SyPlay accompagné de Lan Truong et
                     Guillaume Briat
                 </figcaption>
             </figure>
-            <p>
+            <p class="content__text">
                 Le but de ce site était principalement de montrer que Kaamelott ne se résume
                 pas qu’à des blagues du style « Le gras c’est la vie » et « Faut pas respirer la
                 compote, ça fait tousser ». Une remarque souvent entendue est « Kaamelott
@@ -45,20 +45,20 @@
                 Et bien que ce soit compréhensible, je trouvais dommage de passer à côté de
                 tirades telles que celle d’Arthur à la fin du Livre V.
             </p>
-            <p>
+            <p class="content__text">
                 Donc, le but était de faire
                 un site avec un contenu sérieux, mais qui parle aussi à celles et ceux qui
                 apprécient Kaamelott principalement pour la comédie. D’où le choix du thème
                 et de la réplique.
             </p>
-            <figure>
-                <img src="../public/img/about3.webp" alt="Illustration d'Arthur">
-                <figcaption>Artwork d'Arthur dans Kaamelott</figcaption>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/about3.webp" alt="Illustration d'Arthur">
+                <figcaption class="figure__caption">Artwork d'Arthur dans Kaamelott</figcaption>
             </figure>
-            <p>
+            <p class="content__text">
                 Le monologue magistral d'Arthur à la fin du livre V :
             </p>
-            <blockquote cite="https://fr.wikiquote.org/wiki/Kaamelott/Arthur#Livre_V">
+            <blockquote class="content__text" cite="https://fr.wikiquote.org/wiki/Kaamelott/Arthur#Livre_V">
                 « Pour le Graal, j’ai bâti une forteresse, moi. Kaamelott, ça s’appelle. J’ai été
                 chercher des chevaliers dans tout le royaume. En Calédonie, en Carmélide,
                 à Gaunes, à Vannes, aux Pays de Galles... J’ai fait construire une grande
@@ -71,32 +71,32 @@
                     foutu, parce que c’est pas vrai </strong>»
             </blockquote>
         </section>
-        <section>
-            <h2 id="contact">
+        <section class="section">
+            <h2 class="section__title" id="contact">
                 Nous contacter
             </h2>
-            <p>
+            <p class="intro__text">
                 Besoin de renseignements ?
                 Contactez nous en remplissant le formulaire !
             </p>
-            <form action="#">
-                <div>
-                    <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom">
+            <form class="form" action="#">
+                <div class="form__info">
+                    <label class="form__label" for="prenom">Prénom</label>
+                    <input class="form__input" type="text" name="prenom">
                 </div>
-                <div>
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom">
+                <div class="form__info">
+                    <label class="form__label" for="nom">Nom</label>
+                    <input class="form__input" type="text" name="nom">
                 </div>
-                <div>
-                    <label for="mail">Mail</label>
-                    <input type="email" name="mail">
+                <div class="form__info">
+                    <label class="form__label" for="mail">Mail</label>
+                    <input class="form__input" type="email" name="mail">
                 </div>
-                <div>
-                    <label for="message">Votre message</label>
-                    <textarea name="message" rows="5"></textarea>
+                <div class="form__info">
+                    <label class="form__label" for="message">Votre message</label>
+                    <textarea class="form__input" name="message" rows="5"></textarea>
                 </div>
-                <button type="submit">Envoyer</button>
+                <button class="btn--form btn" type="submit">Envoyer</button>
             </form>
         </section>
     </main>
