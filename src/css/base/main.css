@@ -38,6 +38,10 @@ textarea {
     cursor: pointer;
 }
 
+a {
+    color: var(--black);
+}
+
 .link-unstyled {
     text-decoration: none;
     color: var(--black);
