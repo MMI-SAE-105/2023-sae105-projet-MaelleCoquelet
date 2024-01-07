@@ -32,3 +32,14 @@
     font-weight: var(--semi-bold);
     border-radius: 3px;
 }
+
+.btn--form {
+    background-color: var(--blue);
+    width: fit-content;
+    padding: var(--space1) var(--space2);
+    border-radius: 3px;
+}
+
+.btn--form-text {
+    color: var(--skyblue);
+}
