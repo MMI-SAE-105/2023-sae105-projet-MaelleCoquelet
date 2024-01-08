@@ -1,15 +1,27 @@
-.figure{
+.figure {
     display: flex;
     flex-direction: column;
     gap: 2px;
     padding: var(--space1) var(--space2);
 }
 
-.figure__caption{
+.figure__caption {
     font-size: var(--text-small);
     font-style: var(--italic);
 }
 
-.figure--movie{
+.figure--movie {
     padding: 0;
+}
+
+.figure__caption--project {
+    font-style: var(--normal);
+    text-align: center;
+}
+
+.figure--project {
+    gap: var(--space1);
+    width: 65%;
+    align-items: center;
+    justify-content: center;
 }
