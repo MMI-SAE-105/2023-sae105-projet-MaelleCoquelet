@@ -25,3 +25,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.figure--frise {
+    padding: 0;
+    gap: var(--space1);
+}
