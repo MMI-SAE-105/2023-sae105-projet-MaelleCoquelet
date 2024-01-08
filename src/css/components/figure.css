@@ -9,3 +9,7 @@
     font-size: var(--text-small);
     font-style: var(--italic);
 }
+
+.figure--movie{
+    padding: 0;
+}
