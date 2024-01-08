@@ -81,11 +81,11 @@
                 Contactez nous en remplissant le formulaire !
             </p>
             <form class="form" action="#">
-                <div class="form__info">
+                <div class="form__info form__info--name">
                     <label class="form__label" for="prenom">Prénom</label>
                     <input class="form__input" type="text" name="prenom">
                 </div>
-                <div class="form__info">
+                <div class="form__info form__info--name">
                     <label class="form__label" for="nom">Nom</label>
                     <input class="form__input" type="text" name="nom">
                 </div>
@@ -97,8 +97,10 @@
                     <label class="form__label" for="message">Votre message</label>
                     <textarea class="form__input" name="message" rows="5"></textarea>
                 </div>
-                <div class="btn--form btn">
-                    <button class="btn--form-text" type="submit">Envoyer</button>
+                <div class="btn--form-container">
+                    <div class="btn--form btn">
+                        <button class="btn--form-text" type="submit">Envoyer</button>
+                    </div>
                 </div>
             </form>
         </section>
