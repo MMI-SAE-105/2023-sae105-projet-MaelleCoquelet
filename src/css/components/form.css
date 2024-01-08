@@ -25,3 +25,9 @@
 .form__info--name {
     width: 50%;
 }
+
+.form__input::placeholder{
+    color: #66767F;
+    font-size: var(--text-small);
+    font-style: var(--italic);
+}
