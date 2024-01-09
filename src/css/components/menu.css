@@ -1,6 +1,7 @@
 .menu {
     padding: var(--space2);
     /* display: none; */
+    height: 100vh;
 }
 
 .menu__list {
