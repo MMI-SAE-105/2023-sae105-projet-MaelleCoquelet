@@ -24,7 +24,9 @@
                 </a>
             </div>
             <div class="header__end">
-                <a class="header__link link-unstyled header__language" href="../en/quote.html">
+                <a class="header__link link-unstyled header__language" href="../en/quote.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
                     <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
                 </a>
                 <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" x-show="!menuOpen">
