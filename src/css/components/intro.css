@@ -17,6 +17,9 @@
 
 .intro__title {
     font-size: var(--text-title1);
+    margin: 0;
+    padding: 0 0 var(--space1) 0;
+
 }
 
 .intro__title--home {
@@ -25,12 +28,12 @@
     text-align: center;
 }
 
-.intro__info{
+.intro__info {
     font-size: var(--text-small);
     font-style: var(--italic);
 }
 
-.intro__author{
+.intro__author {
     padding: var(--space1) 0;
 }
 
