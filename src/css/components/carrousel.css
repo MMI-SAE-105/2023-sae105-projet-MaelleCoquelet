@@ -1,0 +1,14 @@
+.carrousel {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+}
+
+.carrousel__project {
+    width: 90%;
+    flex: none;
+    scroll-snap-align: start;
+}

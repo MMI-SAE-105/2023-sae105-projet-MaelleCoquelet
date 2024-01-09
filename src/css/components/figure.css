@@ -21,7 +21,7 @@
 
 .figure--project {
     gap: var(--space1);
-    width: 65%;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
