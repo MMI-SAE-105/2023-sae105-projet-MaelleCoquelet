@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="{menu__noScroll:menuOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/icons/logoKaalsifis.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Stratégie Musicale</title>
+</head>
+
+<body>
+    <header class="header header--blue">
+        <div class="header__items">
+            <div class="header__start">
+                <a class="header__link link-unstyled" href="./index.html">
+                    <img class="header__logo" src="../public/icons/logoKaalsifis.svg" alt="Logo Kaalsifis">
+                </a>
+            </div>
+            <div class="header__middle">
+                <a class="header__link link-unstyled header__title" href="./index.html">
+                    Kaalsifis
+                </a>
+            </div>
+            <div class="header__end">
+                <a class="header__link link-unstyled header__language" href="../en/musique.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
+                    <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
+                </a>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" x-show="!menuOpen">
+                    <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
+                        alt="Menu de Navigation">
+                </button>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen"
+                    class="header__btn btn--menu btn--menu--close" x-show="menuOpen">
+                    <img src="../public/icons/croix.svg" alt="Icône de croix">
+                </button>
+            </div>
+        </div>
+        <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity
+            x-transition:leave.duration.250ms.opacity>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./film.html">Kaamelott : Premier Volet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./astier.html">Alexandre Astier</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./livre.html">Art de la Guerre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./musique.html">Stratégie Musicale</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./cinema.html">Plus de Cinéma</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <header class="section__header intro">
+                <h1 class="intro__title">Stratégie musicale dans « Kaamelott » : « Une Autre Attaque Burgonde »</h1>
+                <ul class="list-unstyled intro__author">
+                    <li class="intro__info">Temps de lecture : 2 min 30</li>
+                    <li class="intro__info">Par Maëlle Coquelet</li>
+                </ul>
+                <p class="intro__text">
+                    Bien que « Kaamelott » ait commencé en tant que comédie, elle a su évoluer.
+                    Cela se ressent dans les thèmes abordés, mais aussi dans sa musique.
+                    Parmi les compositions de la bande originale du film, on trouve « Une Autre
+                    Attaque Burgonde ». Il est à noter que les musiques ont été composées par
+                    Alexandre Astier. La musique marque les moments clés dans le film, et celle-
+                    ci accompagne parfaitement l’un d’eux.
+                </p>
+            </header>
+            <h2 class="content__title">L’Épopée Musicale</h2>
+            <p class="content__text">
+                La musique a toujours joué un rôle crucial dans « Kaamelott : Premier
+                Volet ». Chacune des musiques est reliée à une scène du film. « Une Autre Attaque
+                Burgonde » n’échappe pas à cette règle. La bande originale accompagne
+                parfaitement les scènes du film, et celle-ci en est un exemple.
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/music_burgonde_army2.webp"
+                    alt="Photo des Burgondes dans Kaamelott">
+                <figcaption class="figure__caption">Les Burgondes en attaque</figcaption>
+            </figure>
+            <h2 class="content__title">Les Burgondes</h2>
+            <p class="content__text">
+                Les Burgondes sont un peuple fier, fort, et nuls en stratégie. Leurs attaques
+                contre Kaamelott se soldent systématiquement en échec. La première fois
+                qu’on les voit à l’œuvre, leurs armes se retournent contre eux. Ce fait date
+                de l’époque où Arthur était roi, et ne change pas avec Lancelot sur le trône.
+                Arthur se rend compte que les Burgondes sont de formidables musiciens.
+                Ceci fait écho à l’attrait d’Alexandre Astier pour la musique. Le roi Arthur va
+                donc utiliser cet atout pour la guerre.
+            </p>
+            <h2 class="content__title">La Musique et la Guerre</h2>
+            <p class="content__text">
+                « Une Autre Attaque Burgonde » est liée à la deuxième attaque des Burgondes. Mené par Arthur, cet assaut
+                sur le château
+                de Kaamelott sera un succès.
+                La musique y joue un double rôle, pour le spectateur, mais aussi dans le
+                scénario. Elle est utilisée pour coordonner les troupes. Le Roi Burgonde,
+                accompagné de Dame Séli et Léodagan, assiège le château.
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/music_burgonde_army1.webp"
+                    alt="Photo de l'assaut des Burgondes">
+                <figcaption class="figure__caption">Assaut Burgonde sur Kaamelott</figcaption>
+            </figure>
+            <p class="content__text">
+                Cette manœuvre militaire est une diversion qui permet à Arthur de s’infiltrer
+                par un passage secret. Laissé sans défense par Lancelot, Kaamelott tombe sans pouvoir répliquer. On y a
+                là une
+                application de la théorie du stratège
+                Sun Tzu. Le fait de triompher sans perte ni véritable combat marque aussi le
+                côté pacifiste d’Arthur.
+            </p>
+            <h2 class="content__title">Analyse Musicale</h2>
+            <p class="content__text">
+                Musicalement parlant, « Une Autre Attaque Burgonde » remplit parfaitement
+                son rôle. On commence sur un rythme lent. La musique est marquée par
+                des notes courtes de tuba. Les Burgondes sont désorganisés, et Lancelot se
+                moque de leur manque de cohésion. Ensuite, on marque une légère pause.
+                Une envolée de cuivres, et le signe est lancé par Arthur. Le roi Burgonde,
+                Dame Séli et Léodagan font signe aux troupes. La musique « Une Autre
+                Attaque Burgonde » représente le chaos Burgonde avant l’harmonie et l’ordre.
+                C’est aussi pour cette raison qu’elle est utilisée au début de la bande-annonce
+                du film.
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/music_kaamelottBO.webp"
+                    alt="Photo de la couverture de l'album de Kaamelott : Premier Volet">
+                <figcaption class="figure__caption">Couverture de la bande originale</figcaption>
+            </figure>
+            <h2 class="content__title">Conclusion</h2>
+            <p class="content__text">
+                La bande sonore de Kaamelott accompagne le scénario. Elle est un élément
+                indispensable du reste du film. Chacun des musiques de la bande originale
+                est pensé pour servir le film. En cela, Alexandre Astier marque une fois de
+                plus sa différence. Il a produit, réalisé et composé son film. Cela lui donne
+                une identité propre. Arthur est une légende épique, et il convient de lui apporter des musiques épiques.
+            </p>
+        </section>
+        <section class="section section--discover">
+            <h2 class="section__title">Pour aller plus loin</h2>
+            <article class="article">
+                <div class="article__card">
+                    <a href="./livre.html" class="link-unstyled article__link">
+                        <img class="article__img" src="../public/img/card_book.webp"
+                            alt="Illustration représentant Sun Tzu">
+                        <div class="article__content">
+                            <h3 class="article__title">Art de la Guerre</h3>
+                            <p class="article__text">
+                                Analyse de l’application des
+                                principes de Sun Tzu dans «&#160;Kaamelott : Premier Volet ».
+                            </p>
+                            <div class="btn btn--article">
+                                <p class="btn__text">Lire l'article</p>
+                                <img class="article__icon btn__icon" src="../public/icons/fleche_droite.svg"
+                                    alt="Icône de flèche vers la droite">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer footer__nav">
+            <a class="footer__text footer__link link-unstyled" href="./about.html">À propos</a>
+            <a class="footer__text footer__link link-unstyled" href="./about.html#contact">Nous contacter</a>
+            <a class="footer__text footer__link link-unstyled" href="./glossaire.html">Glossaire</a>
+            <div class="foooter__contact">
+                <p class="footer__text">Maëlle Coquelet</p>
+                <a class="footer__link link-unstyled footer__link--blue"
+                    href="mailto:maelle.coquelet@edu.univ-fcomte.fr">maelle.coquelet@edu.univ-fcomte.fr</a>
+                <p class="footer__text">BUT MMi 1 B1</p>
+            </div>
+            <p class="footer__text"> Projet réalisé dans le cadre d'un exercice pédagogique au
+                <a class="footer__link link-unstyled footer__link--blue" href="https://mmimontbeliard.com/">département
+                    MMi
+                    de
+                    Montbéliard</a>
+            </p>
+            <div class="footer__icons">
+                <a class="footer__link link-unstyled" href="https://mmimontbeliard.com/">
+                    <img class="footer__logo" src="../public/icons/iconeMMI.svg"
+                        alt="Logo du département MMi de Montbéliard">
+                </a>
+                <a class="footer__link link-unstyled" href="https://twitter.com/home">
+                    <img class="footer__logo" src="../public/icons/logoTwitter.svg" alt="Logo de Twitter / X">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

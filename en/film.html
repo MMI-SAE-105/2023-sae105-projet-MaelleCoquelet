@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="{menu__noScroll:menuOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/icons/logoKaalsifis.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Kaamelott : Premier Volet</title>
+</head>
+
+<body>
+    <header class="header header--blue">
+        <div class="header__items">
+            <div class="header__start">
+                <a class="header__link link-unstyled" href="./index.html">
+                    <img class="header__logo" src="../public/icons/logoKaalsifis.svg" alt="Logo Kaalsifis">
+                </a>
+            </div>
+            <div class="header__middle">
+                <a class="header__link link-unstyled header__title" href="./index.html">
+                    Kaalsifis
+                </a>
+            </div>
+            <div class="header__end">
+                <a class="header__link link-unstyled header__language" href="../en/film.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
+                    <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
+                </a>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" x-show="!menuOpen">
+                    <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
+                        alt="Menu de Navigation">
+                </button>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen"
+                    class="header__btn btn--menu btn--menu--close" x-show="menuOpen">
+                    <img src="../public/icons/croix.svg" alt="Icône de croix">
+                </button>
+            </div>
+        </div>
+        <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity
+            x-transition:leave.duration.250ms.opacity>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./film.html">Kaamelott : Premier Volet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./astier.html">Alexandre Astier</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./livre.html">Art de la Guerre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./musique.html">Stratégie Musicale</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./cinema.html">Plus de Cinéma</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <header class="section__header">
+                <h1 class="intro__title">Kaamelott : Premier Volet, l’Épopée Cinématographique</h1>
+                <ul class="list-unstyled intro__author">
+                    <li class="intro__info">Temps de lecture : 2 min</li>
+                    <li class="intro__info">Par Maëlle Coquelet</li>
+                </ul>
+                <p class="intro__text">
+                    Après douze ans d’attente,
+                    « Kaamelott : Premier Volet » est enfin sorti. Le
+                    film nous replonge dans l’univers iconique de la légende arthurienne vue par
+                    Alexandre Astier. Dans cette épopée, nous retrouvons Arthur, ancien roi et protagoniste de la saga.
+                    Attention, spoilers
+                    !
+                </p>
+            </header>
+            <h2 class="content__title">Arthur : Le Roi Inimitable</h2>
+            <p class="content__text">
+                Arthur, toujours joué par Alexandre Astier, est l’élément central du film.
+                Le personnage est cependant un héros contre son gré. Ayant sombré dans
+                la dépression, notre protagoniste n’est plus le roi qu’il était auparavant.
+                Cependant, comme annoncé dans le Livre V, Arthur redevient un héros. Poussé par ses proches, l’ancien
+                roi de
+                Bretagne
+                redevient l’exemple qu’il a toujours essayé d’être.
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/movie_kaamelott_coverSerie.webp"
+                    alt="Photo d'Arthur et ses chevaliers">
+                <figcaption class="figure__caption">Arthur, Léodagan, père Blaise et Bohort</figcaption>
+            </figure>
+            <h2 class="content__title">Le Duo Indissociable : Arthur et Perceval</h2>
+            <p class="content__text">
+                Arthur est porté par ses proches tout au long du film. Parmi eux : le chevalier
+                Perceval, figure emblématique de la série. Accompagné de Karadoc, Perceval
+                a fondé son clan. Celui-ci jouera un rôle fondamental dans le retour d’Arthur
+                en tant que roi. Perceval, joué par Frank Pitiot, apporte l’humour pour lequel
+                il est connu. Sa loyauté légendaire est toujours aussi touchante, même après
+                douze ans. Perceval considère toujours Arthur comme son modèle, tentant de
+                marcher dans ses pas.
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/movie_perceval_herve_dame.webp"
+                    alt="Photo de la Dame du Lac avec Hervé de Rinel et Perceval">
+                <figcaption class="figure__caption">Hervé de Rinel, Dame du Lac et Perceval</figcaption>
+            </figure>
+
+            <h2 class="content__title">Analyse du Film</h2>
+            <p class="content__text">
+                Méritant sa popularité, l’adaptation de Kaamelott au grand écran est un
+                succès. Le film reste fidèle à l’ambiance de la série, tout en intégrant les
+                codes cinématographiques. Kaamelott : Premier Volet reflète l’évolution de la
+                série du Livre IV au Livre V. Mentionnant des sujets plus sombres, comme le
+                suicide, la saga d’Arthur a grandi avec son public. Le film est drôle, touchant,
+                et épique. Arthur est un héros réaliste, avec ses forces mais surtout ses
+                faiblesses.
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/movie_arthur_stoneSword.webp"
+                    alt="Photo d'Arthur devant le rocher d’Excalibur'">
+                <figcaption class="figure__caption">Arthur devant le rocher d’Excalibur</figcaption>
+            </figure>
+            <p class="content__text">
+                La force de « Kaamelott : Premier Volet », ce sont ses personnages. La relation
+                entre Arthur et Guenièvre, autrefois tumultueuse, est désormais digne de
+                la légende. Merlin retrouve ses lettres de noblesse dans ce film, chose que
+                beaucoup de fans attendaient. Même les nouveaux parviennent à se hisser
+                au niveau des favoris des fans. De son côté, Arthur reste fidèle à lui-même. Contrairement à Lancelot,
+                il
+                est réellement
+                le héros de cette histoire.
+            </p>
+            <h2 class="content__title">Conclusion</h2>
+            <p class="content__text">
+                « Kaamelott : Premier Volet » est la juste suite de la série Kaamelott.
+                Alexandre Astier nous démontre encore une fois son génie créatif, et son
+                talent pour le choix de ses acteurs. Arthur, Perceval, Merlin et les autres nous
+                replongent dans l’univers de la quête du Graal. Cette quête n’est d’ailleurs
+                pas finie, et la suite de l’épopée arthurienne est attendue en 2024.
+            </p>
+            <h3 class="content__title content__title--bold">Découvrez la bande annonce du film évènement :</h3>
+            <figure class="figure">
+                <video class="figure__img" controls>
+                    <source src="https://maelle-coquelet.fr/videos/kv1_bande-annonce" type="video/mp4">
+                </video>
+                <figcaption class="figure__caption">Trailer du film « Kaamelott : Premier Volet&#160;»</figcaption>
+            </figure>
+        </section>
+        <section class="section section--discover">
+            <h2 class="section__title">Pour aller plus loin</h2>
+            <article class="article">
+                <div class="article__card">
+                    <a class="link-unstyled article__link" href="./astier.html">
+                        <img class="article__img" src="../public/img/card_director.webp" alt="Photo d'Alexandre Astier">
+                        <div class="article__content">
+                            <h3 class="article__title">Alexandre Astier</h3>
+                            <p class="article__text">
+                                Alexandre Astier est une figure emblématique de la
+                                culture française. Focus sur sa carrière.
+                            </p>
+                            <div class="btn btn--article">
+                                <p class="btn__text">Lire l'article</p>
+                                <img class="article__icon btn__icon" src="../public/icons/fleche_droite.svg"
+                                    alt="Icône de flèche vers la droite">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer footer__nav">
+            <a class="footer__text footer__link link-unstyled" href="./about.html">À propos</a>
+            <a class="footer__text footer__link link-unstyled" href="./about.html#contact">Nous contacter</a>
+            <a class="footer__text footer__link link-unstyled" href="./glossaire.html">Glossaire</a>
+            <div class="foooter__contact">
+                <p class="footer__text">Maëlle Coquelet</p>
+                <a class="footer__link link-unstyled footer__link--blue"
+                    href="mailto:maelle.coquelet@edu.univ-fcomte.fr">maelle.coquelet@edu.univ-fcomte.fr</a>
+                <p class="footer__text">BUT MMi 1 B1</p>
+            </div>
+            <p class="footer__text"> Projet réalisé dans le cadre d'un exercice pédagogique au
+                <a class="footer__link link-unstyled footer__link--blue" href="https://mmimontbeliard.com/">département
+                    MMi
+                    de
+                    Montbéliard</a>
+            </p>
+            <div class="footer__icons">
+                <a class="footer__link link-unstyled" href="https://mmimontbeliard.com/">
+                    <img class="footer__logo" src="../public/icons/iconeMMI.svg"
+                        alt="Logo du département MMi de Montbéliard">
+                </a>
+                <a class="footer__link link-unstyled" href="https://twitter.com/home">
+                    <img class="footer__logo" src="../public/icons/logoTwitter.svg" alt="Logo de Twitter / X">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

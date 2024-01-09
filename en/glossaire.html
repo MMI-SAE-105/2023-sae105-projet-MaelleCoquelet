@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="{menu__noScroll:menuOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/icons/logoKaalsifis.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Glossaire</title>
+</head>
+
+<body>
+    <header class="header header--blue">
+        <div class="header__items">
+            <div class="header__start">
+                <a class="header__link link-unstyled" href="./index.html">
+                    <img class="header__logo" src="../public/icons/logoKaalsifis.svg" alt="Logo Kaalsifis">
+                </a>
+            </div>
+            <div class="header__middle">
+                <a class="header__link link-unstyled header__title" href="./index.html">
+                    Kaalsifis
+                </a>
+            </div>
+            <div class="header__end">
+                <a class="header__link link-unstyled header__language" href="../en/glossaire.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
+                    <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
+                </a>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" x-show="!menuOpen">
+                    <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
+                        alt="Menu de Navigation">
+                </button>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen"
+                    class="header__btn btn--menu btn--menu--close" x-show="menuOpen">
+                    <img src="../public/icons/croix.svg" alt="Icône de croix">
+                </button>
+            </div>
+        </div>
+        <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity
+            x-transition:leave.duration.250ms.opacity>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./film.html">Kaamelott : Premier Volet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./astier.html">Alexandre Astier</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./livre.html">Art de la Guerre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./musique.html">Stratégie Musicale</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./cinema.html">Plus de Cinéma</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="section">
+        <h1 class="intro__title">Glossaire</h1>
+        <p class="intro__text">Liste de définitions de certains des termes</p>
+        <figure class="figure">
+            <img class="figure__img" src="../public/img/glossary1.webp" alt="Photo d'un livre ouvert">
+            <figcaption class="figure__caption">Livre ouvert</figcaption>
+        </figure>
+        <ul class="list-unstyled">
+            <li class="content__text">
+                Astrophysicien : scientifique étudiant les propriétés des objets présents dans l’univers, principalement
+                des
+                astres.
+            </li>
+            <li class="content__text">
+                Burgonde : Peuple de Germain orientaux. Leur royaume comptait autrefois la
+                Bourgogne Franche-Comté.
+            </li>
+            <li class="content__text">
+                Bretagne (ici) : Royaume d’Arthur, qui contient entre autres la Grande Bretagne actuelle, l’Irlande
+                ainsi
+                qu’une partie
+                de la Bretagne française
+                actuelle.
+            </li>
+            <li class="content__text">
+                Royaume de Logres : aussi appelé Royaume de Kaamelott, territoire de la fédération du roi Arthur.
+            </li>
+            <li class="content__text">
+                Jeu de Rôle : Jeu sur table ou en ligne Durant lequel les joueurns incarnent des personnages, menés par
+                un
+                Maître de
+                Donjon (MJ)
+            </li>
+            <li class="content__text">
+                Salsifis : le salsifis est un légume racine ancien, légèrement sucré.
+                <figure class="figure">
+                    <img class="figure__img" src="../public/img/glossary2.webp" alt="Photo de Salsifis">
+                    <figcaption class="figure__caption">Salsifis</figcaption>
+                </figure>
+            </li>
+            <li class="content__text">
+                Spoilers : éléments importants d’une histoire, le fait de les dire peut gâcher la
+                surprise du scénario.
+            </li>
+        </ul>
+    </main>
+    <footer class="footer">
+        <nav class="footer footer__nav">
+            <a class="footer__text footer__link link-unstyled" href="./about.html">À propos</a>
+            <a class="footer__text footer__link link-unstyled" href="./about.html#contact">Nous contacter</a>
+            <a class="footer__text footer__link link-unstyled" href="./glossaire.html">Glossaire</a>
+            <div class="foooter__contact">
+                <p class="footer__text">Maëlle Coquelet</p>
+                <a class="footer__link link-unstyled footer__link--blue"
+                    href="mailto:maelle.coquelet@edu.univ-fcomte.fr">maelle.coquelet@edu.univ-fcomte.fr</a>
+                <p class="footer__text">BUT MMi 1 B1</p>
+            </div>
+            <p class="footer__text"> Projet réalisé dans le cadre d'un exercice pédagogique au
+                <a class="footer__link link-unstyled footer__link--blue" href="https://mmimontbeliard.com/">département
+                    MMi
+                    de
+                    Montbéliard</a>
+            </p>
+            <div class="footer__icons">
+                <a class="footer__link link-unstyled" href="https://mmimontbeliard.com/">
+                    <img class="footer__logo" src="../public/icons/iconeMMI.svg"
+                        alt="Logo du département MMi de Montbéliard">
+                </a>
+                <a class="footer__link link-unstyled" href="https://twitter.com/home">
+                    <img class="footer__logo" src="../public/icons/logoTwitter.svg" alt="Logo de Twitter / X">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

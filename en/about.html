@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="{menu__noScroll:menuOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/icons/logoKaalsifis.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>À propos</title>
+</head>
+
+<body>
+    <header class="header header--blue">
+        <div class="header__items">
+            <div class="header__start">
+                <a class="header__link link-unstyled" href="./index.html">
+                    <img class="header__logo" src="../public/icons/logoKaalsifis.svg" alt="Logo Kaalsifis">
+                </a>
+            </div>
+            <div class="header__middle">
+                <a class="header__link link-unstyled header__title" href="./index.html">
+                    Kaalsifis
+                </a>
+            </div>
+            <div class="header__end">
+                <a class="header__link link-unstyled header__language" href="../en/about.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
+                    <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
+                </a>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" x-show="!menuOpen">
+                    <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
+                        alt="Menu de Navigation">
+                </button>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen"
+                    class="header__btn btn--menu btn--menu--close" x-show="menuOpen">
+                    <img src="../public/icons/croix.svg" alt="Icône de croix">
+                </button>
+            </div>
+        </div>
+        <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity
+            x-transition:leave.duration.250ms.opacity>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./film.html">Kaamelott : Premier Volet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./astier.html">Alexandre Astier</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./livre.html">Art de la Guerre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./musique.html">Stratégie Musicale</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./cinema.html">Plus de Cinéma</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <h1 class="section__title">À propos</h1>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/about1.webp" alt="Citation de Perceval">
+                <figcaption class="figure__caption">Citation de Perceval</figcaption>
+            </figure>
+            <p class="content__text">
+                L’équipe responsable du site se compose de Maëlle Coquelet.
+                Étudiante en BUT MMi, j’ai réalisé ce site dans le cadre d’un projet
+                pédagogique au département MMi de Montbéliard.
+            </p>
+            <p class="content__text">
+                Une de mes inspirations a été la <a href="https://www.youtube.com/@Sy_Play">chaîne SyPlay</a>. Sy est un
+                vidéaste qui réalise
+                des analyses de personnages, majoritairement sur Kaamelott. C’est son
+                contenu qui m’a poussé à regarder les derniers Livres de la série. Allez-vous
+                abonner, c’est gratuit et son contenu est de qualité !
+
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/about2.webp"
+                    alt="Sy Play accompagné de Lan Truong et Guillaume Briat">
+                <figcaption class="figure__caption">
+                    Sy de SyPlay accompagné de Lan Truong et
+                    Guillaume Briat
+                </figcaption>
+            </figure>
+            <p class="content__text">
+                Le but de ce site était principalement de montrer que Kaamelott ne se résume
+                pas qu’à des blagues du style « Le gras c’est la vie » et « Faut pas respirer la
+                compote, ça fait tousser ». Une remarque souvent entendue est « Kaamelott
+                j’aime bien, mais à partir du Livre IV c’est moins drôle donc j’aime moins. »
+                Et bien que ce soit compréhensible, je trouvais dommage de passer à côté de
+                tirades telles que celle d’Arthur à la fin du Livre V.
+            </p>
+            <p class="content__text">
+                Donc, le but était de faire
+                un site avec un contenu sérieux, mais qui parle aussi à celles et ceux qui
+                apprécient Kaamelott principalement pour la comédie. D’où le choix du thème
+                et de la réplique.
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/about3.webp" alt="Illustration d'Arthur">
+                <figcaption class="figure__caption">Artwork d'Arthur dans Kaamelott</figcaption>
+            </figure>
+            <p class="content__text">
+                Le monologue magistral d'Arthur à la fin du livre V :
+            </p>
+            <blockquote class="content__text" cite="https://fr.wikiquote.org/wiki/Kaamelott/Arthur#Livre_V">
+                « Pour le Graal, j’ai bâti une forteresse, moi. Kaamelott, ça s’appelle. J’ai été
+                chercher des chevaliers dans tout le royaume. En Calédonie, en Carmélide,
+                à Gaunes, à Vannes, aux Pays de Galles... J’ai fait construire une grande
+                table, pour que les chevaliers s’assoient ensemble. Je l’ai voulue ronde, pour qu’aucun d’entre eux ne
+                se retrouve assis
+                dans un angle, ou en bout de table.
+                C’était compliqué, alors j’ai essayé d’expliquer ce qu’était le Graal, pour que
+                tout le monde comprenne. C’était difficile, alors j’ai essayé de rigoler pour
+                que personne ne s’ennuie. <strong>J’ai raté, mais je veux pas qu’on dise que j’ai rien
+                    foutu, parce que c’est pas vrai </strong>»
+            </blockquote>
+        </section>
+        <section class="section">
+            <h2 class="section__title" id="contact">
+                Nous contacter
+            </h2>
+            <p class="intro__text">
+                Besoin de renseignements ?
+                Contactez nous en remplissant le formulaire !
+            </p>
+            <form class="form" action="#">
+                <div class="form__info form__info--name">
+                    <label class="form__label" for="prenom">Prénom</label>
+                    <input class="form__input" id="prenom" type="text" name="prenom" placeholder="Giorno">
+                </div>
+                <div class="form__info form__info--name">
+                    <label class="form__label" for="nom">Nom</label>
+                    <input class="form__input" id="nom" type="text" name="nom" placeholder="Giovanna">
+                </div>
+                <div class="form__info">
+                    <label class="form__label" for="mail">Mail</label>
+                    <input class="form__input" id="mail" type="email" name="mail" placeholder="golden.wind@gmail.com">
+                </div>
+                <div class="form__info">
+                    <label class="form__label" for="message">Votre message</label>
+                    <textarea class="form__input" id="message" name="message" rows="5"
+                        placeholder="Dites-nous tout !"></textarea>
+                </div>
+                <div class="btn--form-container">
+                    <div class="btn--form btn">
+                        <button class="btn--form-text" type="submit">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer footer__nav">
+            <a class="footer__text footer__link link-unstyled" href="./about.html">À propos</a>
+            <a class="footer__text footer__link link-unstyled" href="./about.html#contact">Nous contacter</a>
+            <a class="footer__text footer__link link-unstyled" href="./glossaire.html">Glossaire</a>
+            <div class="foooter__contact">
+                <p class="footer__text">Maëlle Coquelet</p>
+                <a class="footer__link link-unstyled footer__link--blue"
+                    href="mailto:maelle.coquelet@edu.univ-fcomte.fr">maelle.coquelet@edu.univ-fcomte.fr</a>
+                <p class="footer__text">BUT MMi 1 B1</p>
+            </div>
+            <p class="footer__text"> Projet réalisé dans le cadre d'un exercice pédagogique au
+                <a class="footer__link link-unstyled footer__link--blue" href="https://mmimontbeliard.com/">département
+                    MMi
+                    de
+                    Montbéliard</a>
+            </p>
+            <div class="footer__icons">
+                <a class="footer__link link-unstyled" href="https://mmimontbeliard.com/">
+                    <img class="footer__logo" src="../public/icons/iconeMMI.svg"
+                        alt="Logo du département MMi de Montbéliard">
+                </a>
+                <a class="footer__link link-unstyled" href="https://twitter.com/home">
+                    <img class="footer__logo" src="../public/icons/logoTwitter.svg" alt="Logo de Twitter / X">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

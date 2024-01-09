@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="{menu__noScroll:menuOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/icons/logoKaalsifis.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Plus de Cinéma</title>
+</head>
+
+<body>
+    <header class="header header--blue">
+        <div class="header__items">
+            <div class="header__start">
+                <a class="header__link link-unstyled" href="./index.html">
+                    <img class="header__logo" src="../public/icons/logoKaalsifis.svg" alt="Logo Kaalsifis">
+                </a>
+            </div>
+            <div class="header__middle">
+                <a class="header__link link-unstyled header__title" href="./index.html">
+                    Kaalsifis
+                </a>
+            </div>
+            <div class="header__end">
+                <a class="header__link link-unstyled header__language" href="../en/cinema.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
+                    <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
+                </a>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" x-show="!menuOpen">
+                    <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
+                        alt="Menu de Navigation">
+                </button>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen"
+                    class="header__btn btn--menu btn--menu--close" x-show="menuOpen">
+                    <img src="../public/icons/croix.svg" alt="Icône de croix">
+                </button>
+            </div>
+        </div>
+        <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity
+            x-transition:leave.duration.250ms.opacity>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./film.html">Kaamelott : Premier Volet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./astier.html">Alexandre Astier</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./livre.html">Art de la Guerre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./musique.html">Stratégie Musicale</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./cinema.html">Plus de Cinéma</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <header class="section__header intro">
+                <h1 class="intro__title">Sélection Cinéma</h1>
+                <p class="intro__text">Sélection de films à visionner après « Kaamelott : Premier
+                    Volet&#160;»</p>
+            </header>
+            <ul class="list-unstyled list">
+                <li class="article">
+                    <a class="" href="https://youtu.be/klnu4ps7C8w?si=5PatVI_0Eq57N77p">
+                        <figure class="figure figure--movie">
+                            <img class="figure__img" src="../public/img/cover_asterix.webp"
+                                alt="Affiche d'Astérix et le Secret de la Potion Magique">
+                            <figcaption class="figure__caption">Astérix et le Secret de la Potion Magique
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <ul class="list-unstyled list">
+                        <li class="list__info">Réalisation : Alexandre Astier</li>
+                        <li class="list__info">Sortie : 2018</li>
+                        <li class="list__info">Genre : Animation 3D, comédie</li>
+                    </ul>
+                    <p class="content__text">
+                        La légendaire épopée de Panoramix. À la recherche d’un successeur,
+                        Panoramix emmène avec lui Astérix et Obélix. Pour en découvrir plus sur les
+                        créations d’Alexandre Astier.
+                    </p>
+                </li>
+                <li class="article">
+                    <a class="" href="https://youtu.be/nalLU8i4zgs?si=taarwKIZtlw31ADf">
+                        <figure class="figure figure--movie">
+                            <img class="figure__img" src="../public/img/cover_lotr.webp"
+                                alt="Affiche du Seigneur des Anneaux : La communauté de l'Anneau">
+                            <figcaption class="figure__caption">
+                                Le Seigneur des Anneaux : la Communauté de
+                                l’Anneau
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <ul class="list-unstyled list">
+                        <li class="list__info">Réalisation : Peter Jackson</li>
+                        <li class="list__info">Sortie : 2001</li>
+                        <li class="list__info">Genre : Fantasy</li>
+                    </ul>
+                    <p class="content__text">
+                        Frodon, Gandalf et la Communauté de l’anneau se lancent dans un
+                        dangereux voyage, pour éviter le retour du ténébreux Sauron… Pour les fans
+                        de fantasy, et d’épopée épique.
+                    </p>
+                </li>
+                <li class="article">
+                    <a class="" href="https://youtu.be/4b52A3sKz-I?si=CkqN0Zdzf5iex2E8">
+                        <figure class="figure figure--movie">
+                            <img class="figure__img" src="../public/img/cover_holyGrail.webp"
+                                alt="Affiche de Monty Python : Sacré Graal !">
+                            <figcaption class="figure__caption">Monty Python : Sacré Graal !</figcaption>
+                        </figure>
+                    </a>
+                    <ul class="list-unstyled list">
+                        <li class="list__info">Réalisation : Terry Gilliam et Terry Jones</li>
+                        <li class="list__info">Sortie : 1975</li>
+                        <li class="list__info">Genre : Comédie</li>
+                    </ul>
+                    <p class="content__text">L’épopée culte des Monty Python, à la recherche du Graal. Pour les grands
+                        nostalgiques,
+                        et
+                        les
+                        adeptes de l’humour
+                        « à la Kaamelott »</p>
+                </li>
+                <li class="article">
+                    <a class="" href="https://youtu.be/eRcy28HBdmw?si=iK6rb4MWhLC-eCJk">
+                        <figure class="figure figure--movie">
+                            <img class="figure__img" src="../public/img/cover_DnD.webp"
+                                alt="Affiche de Donjons et Dragons : l’Honneur des voleurs">
+                            <figcaption class="figure__caption">Donjons et Dragons : l’Honneur des voleurs
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <ul class="list-unstyled list">
+                        <li class="list__info">Réalisation : Jonathan Goldstein</li>
+                        <li class="list__info">Sortie : 2023</li>
+                        <li class="list__info">Genre : Heroic Fantasy, comédie, action, aventure</li>
+                    </ul>
+                    <p class="content__text">Adaptation du très populaire jeu de rôle Donjons et Dragons. Edgin et Holga
+                        sont des voleurs ratés qui viennent de s’échapper de prison. À leur sortie,
+                        le monde court un grand danger, et c’est à eux de s’en occuper ! Pour les
+                        amateurs de films mélangeant action, aventure et comédie.</p>
+                </li>
+                <li class="article">
+                    <a class="" href="https://youtu.be/1R2HpgDVrFc?si=TB-dxmXILuqMHVgl">
+                        <figure class="figure figure--movie">
+                            <img class="figure__img" src="../public/img/cover_300.webp" alt="Affiche de 300">
+                            <figcaption class="figure__caption">300</figcaption>
+                        </figure>
+                    </a>
+                    <ul class="list-unstyled list">
+                        <li class="list__info">Réalisation : Zack Snyder</li>
+                        <li class="list__info">Sortie : 2006</li>
+                        <li class="list__info">Genre : Péplum, action, guerre</li>
+                    </ul>
+                    <p class="content__text">Le récit héroïque et sanglant de la guerre qui opposa les Spartes aux
+                        Perses.
+                        Léonidas,
+                        roi
+                        de
+                        Sparte, mène 300 hommes
+                        dans un combat semblant perdu d’avance. Pour les fans de films historiques, et de
+                        narration
+                        épique.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2 class="section__title">
+                Pour aller plus loin
+            </h2>
+            <div class="carrousel">
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_inception.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Lola Roth</div>
+                                    <div class="project__title">« Senseception »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_paprika.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Ronan Lefour</div>
+                                    <div class="project__title">« Paprik-IA »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_chateauAmbulant.webp"
+                                    alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Anis Amrouche</div>
+                                    <div class="project__title">« MysticHowl »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_hungerGames.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Noélie Talhouarn</div>
+                                    <div class="project__title">« Hope Games »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_asterixCleopatre.webp"
+                                    alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Chloé Vincent</div>
+                                    <div class="project__title">« Mission Cléopâtre »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_avatar.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Gabriel Moreau</div>
+                                    <div class="project__title">« Avatar’s Legacy »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_rush.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Antoine Fabre</div>
+                                    <div class="project__title">« Rush Racing Rivals »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_lotr.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Killian Breuil</div>
+                                    <div class="project__title">« La confrérie »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_scarface.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Matthis Boreaniz</div>
+                                    <div class="project__title">« ScarInfo »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_alien.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Max Prin</div>
+                                    <div class="project__title">« Alien from Space »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_hateUgive.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Orly Channella Irumva</div>
+                                    <div class="project__title">« JustiVibe »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_fightClub.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Matys Ouvrard</div>
+                                    <div class="project__title">« Insomnia »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="carrousel__project">
+                    <a class="link-unstyled" href="#">
+                        <div class="project">
+                            <figure class="figure figure--project">
+                                <img class="figure__img" src="../public/img/Projet_watchmen.webp" alt="Affiche d">
+                                <figcaption class="figure__caption figure__caption--project">
+                                    <div class="project__author">Rémi Marthinet</div>
+                                    <div class="project__title">« FaceOfApocalypse »</div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer footer__nav">
+            <a class="footer__text footer__link link-unstyled" href="./about.html">À propos</a>
+            <a class="footer__text footer__link link-unstyled" href="./about.html#contact">Nous contacter</a>
+            <a class="footer__text footer__link link-unstyled" href="./glossaire.html">Glossaire</a>
+            <div class="foooter__contact">
+                <p class="footer__text">Maëlle Coquelet</p>
+                <a class="footer__link link-unstyled footer__link--blue"
+                    href="mailto:maelle.coquelet@edu.univ-fcomte.fr">maelle.coquelet@edu.univ-fcomte.fr</a>
+                <p class="footer__text">BUT MMi 1 B1</p>
+            </div>
+            <p class="footer__text"> Projet réalisé dans le cadre d'un exercice pédagogique au
+                <a class="footer__link link-unstyled footer__link--blue" href="https://mmimontbeliard.com/">département
+                    MMi
+                    de
+                    Montbéliard</a>
+            </p>
+            <div class="footer__icons">
+                <a class="footer__link link-unstyled" href="https://mmimontbeliard.com/">
+                    <img class="footer__logo" src="../public/icons/iconeMMI.svg"
+                        alt="Logo du département MMi de Montbéliard">
+                </a>
+                <a class="footer__link link-unstyled" href="https://twitter.com/home">
+                    <img class="footer__logo" src="../public/icons/logoTwitter.svg" alt="Logo de Twitter / X">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

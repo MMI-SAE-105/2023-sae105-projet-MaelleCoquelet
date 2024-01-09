@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="{menu__noScroll:menuOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/icons/logoKaalsifis.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Guerre et Salsifis</title>
+</head>
+
+<body>
+    <header class="header header--blue">
+        <div class="header__items">
+            <div class="header__start">
+                <a class="header__link link-unstyled" href="./index.html">
+                    <img class="header__logo" src="../public/icons/logoKaalsifis.svg" alt="Logo Kaalsifis">
+                </a>
+            </div>
+            <div class="header__middle">
+                <a class="header__link link-unstyled header__title" href="./index.html">
+                    Kaalsifis
+                </a>
+            </div>
+            <div class="header__end">
+                <a class="header__link link-unstyled header__language" href="../en/quote.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
+                    <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
+                </a>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" x-show="!menuOpen">
+                    <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
+                        alt="Menu de Navigation">
+                </button>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen"
+                    class="header__btn btn--menu btn--menu--close" x-show="menuOpen">
+                    <img src="../public/icons/croix.svg" alt="Icône de croix">
+                </button>
+            </div>
+        </div>
+        <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity
+            x-transition:leave.duration.250ms.opacity>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./film.html">Kaamelott : Premier Volet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./astier.html">Alexandre Astier</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./livre.html">Art de la Guerre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./musique.html">Stratégie Musicale</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./cinema.html">Plus de Cinéma</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <header class="section__header intro">
+                <h1 class="intro__title">« Arthur, la guerre est un salsifis ! »</h1>
+                <ul class="list-unstyled intro__author">
+                    <li class="intro__info">Temps de lecture : 2 min 30</li>
+                    <li class="intro__info">Par Maëlle Coquelet</li>
+                </ul>
+                <p class="intro__text">
+                    « Kaamelott : Premier Volet », un film qui a su répondre aux attentes des fans.
+                    L’humour caractériel de la série est de retour dans ce premier opus. Une
+                    réplique a fait réagir en particulier : « Arthur, la guerre est un salsifis ! ». On
+                    a ici le retour de l’humour absurde de la série. C’est pas faux, mais n’y a-t-il pas plus à creuser
+                    ?
+                    Décryptage.
+                </p>
+                <figure class="figure">
+                    <img class="figure__img" src="../public/img/quote_burgonde_king.webp" alt="Photo du Roi Burgonde">
+                    <figcaption class="figure__caption">Roi Burgonde</figcaption>
+                </figure>
+            </header>
+            <h2 class="content__title">Le Contexte de la Réplique</h2>
+            <p class="content__text">
+                Le Roi Burgonde, joué par Guillaume Briat, est à l’origine de cette réplique déjà culte. Le royaume de
+                Logres
+                est sous le joug de Lancelot depuis 10 ans. 10 ans que les Burgondes tentent de prendre Kaamelott. C’est
+                lors d’une
+                de ses tentatives que le Roi Burgonde interpelle Lancelot. « Arthur, la guerre est
+                un salsifis ! ». Ce qui fait la force de cette réplique, c’est son contexte. Arthur
+                n’est nulle part en vue lorsque cette phrase est prononcée. Lancelot est terriblement vexé d’être
+                confondu
+                avec son
+                ennemi. Quant au roi Burgonde,
+                on ne sait toujours pas s’il parle la langue. À de nombreuses reprises dans la
+                série, le doute est permis…
+            </p>
+            <h2 class="content__title">Guerre, illusion, salsifis ?</h2>
+            <p class="content__text">
+                La citation du Roi Burgonde est caractéristique du personnage. Tout au long
+                de la série, on ne le comprend pas. C’est un personnage rustre, sans manière, qui profite du roi Arthur
+                et
+                de son
+                garde-manger. Et s’il était beaucoup plus
+                intelligent qu’il ne le laisse paraître ?
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/quote_arthur_table.webp"
+                    alt="Photo d'Arthur à table avec Perceval">
+                <figcaption class="figure__caption">Arthur, l’air choqué</figcaption>
+            </figure>
+            <p class="content__text">
+                Dit comme ça, cette phrase peut faire sourire. Cependant, le Roi Burgonde
+                est gagnant de son ignorance. Il mange aux frais du roi, et obtient des
+                traités de paix qui lui sont avantageux. Alors la réplique ne voudrait elle
+                pas dire exactement ce qu’elle dit ? La guerre est une illusion. La guerre est un salsifis. La guerre
+                n’est pas une
+                vraie guerre. Elle est absurde. Mais ça,
+                Lancelot ne le sait pas.
+            </p>
+
+            <h2 class="content__title">Le Rôle de Lancelot</h2>
+            <p class="content__text">
+                Lancelot est l’ennemi juré d’Arthur. Autrefois, il était son meilleur conseiller.
+                Il a depuis sombré dans la folie, et ne discerne plus le bon du mal. Lancelot
+                est devenu malgré lui le « méchant » de l’histoire. Et en sa qualité de
+                méchant, il n’a pas la clairvoyance d’Arthur. La réplique « Arthur, la guerre est un salsifis ! » le
+                fait sortir de ses
+                gonds. Lancelot ne comprend pas
+                le Roi Burgonde, et ne sait pas le gérer comme le fait Arthur. Alors, chaque comparaison avec son
+                prédécesseur le rend
+                furieux. Lancelot voulait être
+                le sauveur, il est désormais le persécuteur. La situation est tragique, en
+                décalage avec le ton de la réplique.
+            </p>
+            <figure class="figure">
+                <img class="figure__img" src="../public/img/quote_lancelot_throne.webp"
+                    alt="Photo de Lancelot souverain">
+                <figcaption class="figure__caption">Lancelot dans Kaamelott Premier Volet</figcaption>
+            </figure>
+            <h2 class="content__title">Analyse de la Réplique</h2>
+            <p class="content__text">
+                Les répliques de « Kaamelott » illustrent le talent d’Alexandre Astier pour l’écriture. Le ton est léger
+                mais le
+                sous-texte satirique. La guerre est un sujet sérieux, qu’Alexandre Astier a su traiter avec justesse.
+                Avec
+                ces
+                dialogues,
+                Astier marque le retour de Kaamelott, avec le tournant que la série a pris à
+                partir du Livre IV.
+            </p>
+            <h2 class="content__title">Conclusion</h2>
+            <p class="content__text">
+                La réplique « Arthur, la guerre est un salsifis ! » est un parfait début à
+                « Kaamelott : Premier Volet ». Cette scène est le parfait exemple sur la manière
+                qu’à Alexandre Astier de traiter les thèmes sérieux. Le ton est juste, l’humour qu’affectionne les fans
+                de
+                la série est
+                toujours là. On va plus loin dans l’Art de
+                la Guerre que maitrise Arthur, et on se délecte du génie d’écriture d’Alexandre
+                Astier.
+            </p>
+        </section>
+        <section class="section section--discover">
+            <h2 class="section__title">Pour aller plus loin</h2>
+            <article class="article">
+                <div class="article__card">
+                    <a class="article__link link-unstyled" href="./musique.html">
+                        <img class="article__img" src="../public/img/card_music.webp" alt="Cover de l'album de KV1">
+                        <div class="article__content">
+                            <h3 class="article__title">Stratégie Musicale</h3>
+                            <p class="article__text">
+                                Étude de la musique dans «&#160;Kaamelott : Premier Volet »,
+                                et son importance dans le scénario.
+                            </p>
+                            <div class="btn btn--article">
+                                <p class="btn__text">Lire l'article</p>
+                                <img class="btn__icon article__icon" src="../public/icons/fleche_droite.svg"
+                                    alt="Icône de flèche vers la droite">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer footer__nav">
+            <a class="footer__text footer__link link-unstyled" href="./about.html">À propos</a>
+            <a class="footer__text footer__link link-unstyled" href="./about.html#contact">Nous contacter</a>
+            <a class="footer__text footer__link link-unstyled" href="./glossaire.html">Glossaire</a>
+            <div class="foooter__contact">
+                <p class="footer__text">Maëlle Coquelet</p>
+                <a class="footer__link link-unstyled footer__link--blue"
+                    href="mailto:maelle.coquelet@edu.univ-fcomte.fr">maelle.coquelet@edu.univ-fcomte.fr</a>
+                <p class="footer__text">BUT MMi 1 B1</p>
+            </div>
+            <p class="footer__text"> Projet réalisé dans le cadre d'un exercice pédagogique au
+                <a class="footer__link link-unstyled footer__link--blue" href="https://mmimontbeliard.com/">département
+                    MMi
+                    de
+                    Montbéliard</a>
+            </p>
+            <div class="footer__icons">
+                <a class="footer__link link-unstyled" href="https://mmimontbeliard.com/">
+                    <img class="footer__logo" src="../public/icons/iconeMMI.svg"
+                        alt="Logo du département MMi de Montbéliard">
+                </a>
+                <a class="footer__link link-unstyled" href="https://twitter.com/home">
+                    <img class="footer__logo" src="../public/icons/logoTwitter.svg" alt="Logo de Twitter / X">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
