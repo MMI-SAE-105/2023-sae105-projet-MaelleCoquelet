@@ -12,6 +12,8 @@ body {
     background-color: var(--white);
 }
 
+main{margin-top: 100px;}
+
 h1,
 h2,
 h3 {
