@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuOpen: false}" :class="{menu__noScroll:menuOpen}">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header x-data="{menuOpen: false}" class="header header--blue">
+  <header class="header header--blue">
     <div class="header__items">
       <div class="header__start">
         <a class="header__link link-unstyled" href="./index.html">
@@ -31,12 +31,14 @@
           <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
             alt="Menu de Navigation">
         </button>
-        <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" class="header__btn btn--menu btn--menu--close" x-show="menuOpen">
+        <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" class="header__btn btn--menu btn--menu--close"
+          x-show="menuOpen">
           <img src="../public/icons/croix.svg" alt="Icône de croix">
         </button>
       </div>
     </div>
-    <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity x-transition:leave.duration.250ms.opacity>
+    <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity
+      x-transition:leave.duration.250ms.opacity>
       <ul class="menu__list list-unstyled">
         <li class="menu__item">
           <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>

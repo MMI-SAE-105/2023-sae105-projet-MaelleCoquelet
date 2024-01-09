@@ -21,3 +21,8 @@
 .menu__link {
     color: var(--white);
 }
+
+.menu__noScroll,
+.menu__noScroll body {
+    overflow: hidden;
+}
