@@ -31,7 +31,7 @@
 }
 
 .intro__author{
-    padding: var(--space1);
+    padding: var(--space1) 0;
 }
 
 .intro__content {
