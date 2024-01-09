@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header header--blue">
+  <header x-data="{menuOpen: false}" class="header header--blue">
     <div class="header__items">
       <div class="header__start">
         <a class="header__link link-unstyled" href="./index.html">
@@ -27,16 +27,16 @@
         <a class="header__link link-unstyled header__language" href="../en/index.html">
           <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
         </a>
-        <button>
+        <button aria-controls="menuNav" @click="menuOpen = ! menuOpen">
           <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
             alt="Menu de Navigation">
         </button>
-        <button class="header__btn btn--menu btn--menu--close">
+        <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" class="header__btn btn--menu btn--menu--close">
           <img src="../public/icons/croix.svg" alt="Icône de croix">
         </button>
       </div>
     </div>
-    <nav class="menu">
+    <nav id="menuNav" class="menu" x-show="menuOpen">
       <ul class="menu__list list-unstyled">
         <li class="menu__item">
           <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>
