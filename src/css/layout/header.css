@@ -10,7 +10,7 @@
 }
 
 .header__items {
-    height: 100px;
+    height: 85px;
     padding: var(--space3);
     display: flex;
     flex-direction: row;
