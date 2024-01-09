@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuOpen: false}" :class="{menu__noScroll:menuOpen}">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,56 @@
 </head>
 
 <body>
+    <header class="header header--blue">
+        <div class="header__items">
+            <div class="header__start">
+                <a class="header__link link-unstyled" href="./index.html">
+                    <img class="header__logo" src="../public/icons/logoKaalsifis.svg" alt="Logo Kaalsifis">
+                </a>
+            </div>
+            <div class="header__middle">
+                <a class="header__link link-unstyled header__title" href="./index.html">
+                    Kaalsifis
+                </a>
+            </div>
+            <div class="header__end">
+                <a class="header__link link-unstyled header__language" href="../en/cinema.html">
+                    <img class="header__logo" src="../public/icons/frSwitch.svg" alt="Icône de changement de langue">
+                </a>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen" x-show="!menuOpen">
+                    <img class="header__btn btn--menu btn--menu--open" src="../public/icons/menuIcon.svg"
+                        alt="Menu de Navigation">
+                </button>
+                <button aria-controls="menuNav" @click="menuOpen = ! menuOpen"
+                    class="header__btn btn--menu btn--menu--close" x-show="menuOpen">
+                    <img src="../public/icons/croix.svg" alt="Icône de croix">
+                </button>
+            </div>
+        </div>
+        <nav id="menuNav" class="menu" x-show="menuOpen" x-transition:enter.duration.500ms.opacity
+            x-transition:leave.duration.250ms.opacity>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./quote.html">Guerre et Salsifis</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./film.html">Kaamelott : Premier Volet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./astier.html">Alexandre Astier</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./livre.html">Art de la Guerre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./musique.html">Stratégie Musicale</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link link-unstyled" href="./cinema.html">Plus de Cinéma</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="section">
             <header class="section__header intro">
@@ -112,7 +162,8 @@
                         <li class="list__info">Sortie : 2006</li>
                         <li class="list__info">Genre : Péplum, action, guerre</li>
                     </ul>
-                    <p class="content__text">Le récit héroïque et sanglant de la guerre qui opposa les Spartes aux Perses.
+                    <p class="content__text">Le récit héroïque et sanglant de la guerre qui opposa les Spartes aux
+                        Perses.
                         Léonidas,
                         roi
                         de
