@@ -40,6 +40,14 @@
     border-radius: 3px;
 }
 
+.btn--form:active {
+    background-color: var(--skyblue);
+}
+
+.btn--form-text:active {
+    color: var(--blue);
+}
+
 .btn--form-text {
     color: var(--skyblue);
 }
