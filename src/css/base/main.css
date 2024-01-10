@@ -12,12 +12,15 @@ body {
     background-color: var(--white);
 }
 
-main{margin-top: 85px;}
+main {
+    margin-top: 85px;
+}
 
 h1,
 h2,
 h3 {
     font-family: var(--font-serif);
+    margin: 0;
 }
 
 h2,
@@ -53,4 +56,9 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.easter:hover {
+    background-color: var(--black);
+    color: var(--skyblue);
 }
