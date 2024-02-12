@@ -22,6 +22,14 @@
     color: var(--white);
 }
 
+.menu_link-current {
+    color: var(--skyblue);
+}
+
+/* .menu__link-current::before {
+    content: url(../../../public/icons/logoKaalsifis.svg);
+} */
+
 .menu__link:active {
     color: var(--skyblue);
 }
